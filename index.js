@@ -8,6 +8,9 @@ app.get('/hola',(req,res)=>{
     res.send('Ruta Hola');
 })
 
+app.post('/login',(req,res)=>{
+    res.send('Ruta de login nueva');
+})
 
 app.get('/adios',(req,res)=>{
     res.send('Ruta Adios');
