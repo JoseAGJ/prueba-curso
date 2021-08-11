@@ -2,8 +2,15 @@ const express = require('express');
 
 const app = express();
 
-app.use('/',(req,res)=>{
-    res.send('Hola');
+app.use(express.static(__dirname + '/public'));
+
+app.get('/hola',(req,res)=>{
+    res.send('Ruta Hola');
+})
+
+
+app.get('/adios',(req,res)=>{
+    res.send('Ruta Adios');
 })
 
 app.listen(3000);
