@@ -9,13 +9,20 @@ app.get('/hola',(req,res)=>{
 })
 
 
+app.post('/login',(req,res)=>{
+    res.send('Ruta de login nueva');
+})
+
+
 app.get('/adios',(req,res)=>{
     res.send('Ruta Adios');
 })
 
+
 app.post('/registro',(req,res)=>{
     res.send('recibiendo informacion de registro');
 })
+
 
 app.get('/mas',(req,res)=>{
     res.send('Ruta mas');
